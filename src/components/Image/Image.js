@@ -34,9 +34,7 @@ class Image extends React.Component {
     }
 
     checkVisibility() {
-        if (this.state.isVisible) return;
-
-        const { innerHeight } = window;
+        const { innerHeight, innerWidth } = window;
         const {
             top,
             left,
@@ -47,11 +45,15 @@ class Image extends React.Component {
         if (
             top <= innerHeight &&
             bottom >= 0 &&
-            left <= innerHeight &&
+            left <= innerWidth &&
             right >= 0
         ) {
             this.setState({
                 isVisible: true
+            });
+        } else {
+            this.setState({
+                isVisible: false
             });
         }
     }
