@@ -1,0 +1,27 @@
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-img,
+.image-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.image-img {
+    visibility: hidden;
+}
+
+.image-background {
+    opacity: 0;
+    background-size: cover;
+    transition: opacity 350ms 10ms;
+}
+
+.image-loaded .image-background {
+    opacity: 1;
+}

@@ -1,0 +1,61 @@
+@import './fonts';
+@import './variables';
+
+html {
+    font-size: 13px;
+    font-family: 'DAZNOscine';
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-style: normal;
+    text-decoration: none;
+}
+
+body {
+    background: var(--color-dazn-black);
+    color: var(--color-white);
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+@media all and (min-width: 641px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 769px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: 1025px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: 1241px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media all and (min-width: 1601px) {
+    html {
+        font-size: 18px;
+    }
+}

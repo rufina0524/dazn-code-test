@@ -1,0 +1,51 @@
+{
+  "name": "dazn-rails-test",
+  "version": "0.0.0",
+  "description": "DAZN on-site front-end code test",
+  "private": true,
+  "scripts": {
+    "start": "node ./server/server.js",
+    "prettier-watch": "onchange '**/*.js' '**/*.css' -- prettier --config ./config/prettier/.prettierrc --write {{changed}}",
+    "dev": "npm-run-all --parallel prettier-watch start",
+    "test": "mocha --opts ./config/mocha/mocha.opts"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.1.2",
+    "babel-loader": "^8.0.4",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "express": "^4.16.4",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdom": "^13.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.2.0",
+    "mock-css-modules": "^1.0.0",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.2.0",
+    "npm-run-all": "^4.1.3",
+    "onchange": "^5.0.2",
+    "postcss-css-variables": "^0.11.0",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.14.3",
+    "sinon": "^7.1.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}

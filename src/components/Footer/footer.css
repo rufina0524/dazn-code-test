@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.footer {
+    padding: 1rem;
+    background: var(--color-dazn-dark-grey);
+    text-align: center;
+}
+
+.footer-copyright-notice {
+    composes: small-type from '../../styles/typography.css';
+    color: var(--color-dazn-light-grey);
+}

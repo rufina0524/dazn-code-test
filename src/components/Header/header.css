@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+:root {
+    --logo-size: 2.5rem;
+}
+
+.header {
+    background: var(--color-dazn-dark-grey);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0.75rem;
+    line-height: 0;
+}
+
+.header-logo {
+    display: inline-block;
+    height: var(--logo-size);
+    width: var(--logo-size);
+}

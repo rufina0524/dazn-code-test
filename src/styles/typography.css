@@ -1,0 +1,25 @@
+.base-type {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+}
+
+.base-type strong {
+    font-weight: 700;
+}
+
+.base-type em {
+    font-style: italic;
+}
+
+.heading-type {
+    composes: base-type;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.small-type {
+    composes: base-type;
+    font-weight: 400;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,83 @@
+@import '../../styles/variables';
+
+:root {
+    --tile-logo-size: 5rem;
+}
+
+.tile {
+    display: inline-block;
+    background: var(--color-dazn-dark-grey);
+    position: relative;
+    font-size: 12.5rem;
+    height: 1em;
+    width: 1.77em;
+    transition: transform 150ms;
+}
+
+.tile::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4px;
+    background: transparent;
+    transition: background-color 150ms;
+}
+
+.tile:hover {
+    transform: scale(1.04);
+}
+
+.tile-promo {
+    width: 2.65em;
+}
+
+.tile-active::after {
+    background-color: var(--color-dazn-yellow);
+}
+
+.tile-logo {
+    position: absolute;
+    width: var(--tile-logo-size);
+    height: var(--tile-logo-size);
+    left: calc(50% - (var(--tile-logo-size) / 2));
+    top: calc(50% - (var(--tile-logo-size) / 2));
+}
+
+.tile-logo path {
+    fill: var(--color-dazn-medium-grey);
+}
+
+.tile-image,
+.tile-text,
+.tile-text:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tile-text {
+    top: auto;
+    padding: 1rem;
+}
+
+.tile-text:before {
+    content: '';
+    top: -2rem;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.25)
+    );
+}
+
+.tile-title {
+    composes: small-type from '../../styles/typography.css';
+    color: white;
+    font-weight: 900;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    position: relative;
+}

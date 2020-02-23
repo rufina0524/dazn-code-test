@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'DAZNOscine';
+    src: url('/assets/fonts/DAZN_Oscine_W_Rg.eot');
+    src: url('/assets/fonts/DAZN_Oscine_W_Rg.eot') format('embedded-opentype'),
+        url('/assets/fonts/DAZN_Oscine_W_Rg.ttf') format('truetype'),
+        url('/assets/fonts/DAZN_Oscine_W_Rg.woff') format('woff'),
+        url('/assets/fonts/DAZN_Oscine_W_Rg.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DAZNOscine';
+    src: url('/assets/fonts/DAZN_Oscine_W_It.eot');
+    src: url('/assets/fonts/DAZN_Oscine_W_It.eot') format('embedded-opentype'),
+        url('/assets/fonts/DAZN_Oscine_W_It.ttf') format('truetype'),
+        url('/assets/fonts/DAZN_Oscine_W_It.woff') format('woff'),
+        url('/assets/fonts/DAZN_Oscine_W_It.svg') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DAZNOscine';
+    src: url('/assets/fonts/DAZN_Oscine_W_Bd.eot');
+    src: url('/assets/fonts/DAZN_Oscine_W_Bd.eot') format('embedded-opentype'),
+        url('/assets/fonts/DAZN_Oscine_W_Bd.ttf') format('truetype'),
+        url('/assets/fonts/DAZN_Oscine_W_Bd.woff') format('woff'),
+        url('/assets/fonts/DAZN_Oscine_W_Bd.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DAZNOscine';
+    src: url('/assets/fonts/DAZN_Oscine_W_BdIt.eot');
+    src: url('/assets/fonts/DAZN_Oscine_W_BdIt.eot') format('embedded-opentype'),
+        url('/assets/fonts/DAZN_Oscine_W_BdIt.ttf') format('truetype'),
+        url('/assets/fonts/DAZN_Oscine_W_BdIt.woff') format('woff'),
+        url('/assets/fonts/DAZN_Oscine_W_BdIt.svg') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DAZNOscine';
+    src: url('/assets/fonts/DAZN_Oscine_W_XBd.eot');
+    src: url('/assets/fonts/DAZN_Oscine_W_XBd.eot') format('embedded-opentype'),
+        url('/assets/fonts/DAZN_Oscine_W_XBd.ttf') format('truetype'),
+        url('/assets/fonts/DAZN_Oscine_W_XBd.woff') format('woff'),
+        url('/assets/fonts/DAZN_Oscine_W_XBd.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DAZNOscine';
+    src: url('/assets/fonts/DAZN_Oscine_W_XBdIt.eot');
+    src: url('/assets/fonts/DAZN_Oscine_W_XBdIt.eot')
+            format('embedded-opentype'),
+        url('/assets/fonts/DAZN_Oscine_W_XBdIt.ttf') format('truetype'),
+        url('/assets/fonts/DAZN_Oscine_W_XBdIt.woff') format('woff'),
+        url('/assets/fonts/DAZN_Oscine_W_XBdIt.svg') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}

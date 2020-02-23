@@ -1,0 +1,151 @@
+[
+    {
+        "id": "whats-on",
+        "title": "What’s On",
+        "tiles": [
+            {
+                "id": "3b47f17864b34a2687aabb0f25ea3e3e",
+                "title": "AEK v FC Bayern München",
+                "isPromo": false
+            },
+            {
+                "id": "91fded81c9fe4e73aeced7b821039ad4",
+                "title": "NFL Network",
+                "isPromo": false
+            },
+            {
+                "id": "294a3ebc66ec4a1883542468d325f151",
+                "title": "World Series - Dodgers @ Red Sox",
+                "isPromo": false
+            },
+            {
+                "id": "825969feacbd425ebfeae79e484236f7",
+                "title": "MLB Network",
+                "isPromo": false
+            },
+            {
+                "id": "37be7e4f85434084861e4bd9693e53bc",
+                "title": "Penguins @ Oilers",
+                "isPromo": false
+            },
+            {
+                "id": "f99a9017aa684d048fd663ecd5d99035",
+                "title": "Kings @ Nuggets",
+                "isPromo": false
+            },
+            {
+                "id": "13936314590c4372923e76ba0d94ab50",
+                "title": "Santa Fe v Deportivo Cali",
+                "isPromo": false
+            }
+        ]
+    },
+    {
+        "id": "dazn-picks",
+        "title": "DAZN Picks",
+        "tiles": [
+            {
+                "id": "1047818971fe4d3d836a8213e6227e3b",
+                "title": "Spurs @ Lakers",
+                "isPromo": false
+            },
+            {
+                "id": "294a3ebc66ec4a1883542468d325f151",
+                "title": "World Series - Dodgers @ Red Sox",
+                "isPromo": false
+            },
+            {
+                "id": "3b47f17864b34a2687aabb0f25ea3e3e",
+                "title": "AEK v FC Bayern München",
+                "isPromo": false
+            },
+            {
+                "id": "6c311a96d671472086798fa9fa362920",
+                "title": "Borussia Dortmund v Atletico Madrid ",
+                "isPromo": false
+            },
+            {
+                "id": "43c5e95908fb482ab9f90b54cc45d6c7",
+                "title": "Man Utd v Juventus",
+                "isPromo": false
+            },
+            {
+                "id": "c7077c7a2f324e88a8ecb34747ab37a5",
+                "title": "TSG Hoffenheim v Lyon",
+                "isPromo": false
+            },
+            {
+                "id": "1e0d153a2b7e4fb6bf8a46e0e8949e81",
+                "title": "Galatasaray v FC Schalke 04",
+                "isPromo": false
+            },
+            {
+                "id": "1bc7061e94d04a40add227a1c176b041",
+                "title": "Kings @ Nuggets",
+                "isPromo": false
+            }
+        ]
+    },
+    {
+        "id": "eufa-champions-league",
+        "title": "EUFA Champions League",
+        "tiles": [
+            {
+                "id": "6c311a96d671472086798fa9fa362920",
+                "title": "Borussia Dortmund v Atletico Madrid",
+                "isPromo": false
+            },
+            {
+                "id": "1e0d153a2b7e4fb6bf8a46e0e8949e81",
+                "title": "Galatasaray v FC Schalke 04",
+                "isPromo": false
+            },
+            {
+                "id": "c7077c7a2f324e88a8ecb34747ab37a5",
+                "title": "TSG Hoffenheim v Lyon",
+                "isPromo": false
+            },
+            {
+                "id": "3b47f17864b34a2687aabb0f25ea3e3e",
+                "title": "AEK v FC Bayern München",
+                "isPromo": false
+            }
+        ]
+    },
+    {
+        "id": "dont-miss",
+        "title": "Don't miss",
+        "tiles": [
+            {
+                "id": "c9da0b31b9db4b068253b2732d278518",
+                "title": "UEFA Champions League",
+                "isPromo": true
+            },
+            {
+                "id": "c7077c7a2f324e88a8ecb34747ab37a5",
+                "title": "TSG Hoffenheim v Lyon",
+                "isPromo": false
+            },
+            {
+                "id": "108cdc20c3b1490ebcd362a9ba4c5849",
+                "title": "FC Barcelona v Real Madrid",
+                "isPromo": true
+            },
+            {
+                "id": "2f27eebad4d74ecfbdeebbab2e1765e0",
+                "title": "UEFA Europa League",
+                "isPromo": true
+            },
+            {
+                "id": "1e0d153a2b7e4fb6bf8a46e0e8949e81",
+                "title": "Galatasaray v FC Schalke 04",
+                "isPromo": false
+            },
+            {
+                "id": "6c311a96d671472086798fa9fa362920",
+                "title": "Borussia Dortmund v Atletico Madrid ",
+                "isPromo": false
+            }
+        ]
+    }
+]

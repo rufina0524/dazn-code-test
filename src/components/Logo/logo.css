@@ -1,0 +1,5 @@
+@import '../../styles/variables';
+
+.logo path {
+    fill: var(--color-dazn-off-white);
+}

@@ -1,0 +1,92 @@
+@import '../../styles/variables';
+
+:root {
+    --header-height: 2.5rem;
+    --button-size: 3rem;
+    --arrow-size: 1.25rem;
+    --arrow-stroke-width: 4px;
+}
+
+.rail {
+    position: relative;
+    overflow: hidden;
+}
+
+.rail:last-child {
+    margin-bottom: 2rem;
+}
+
+.rail-heading {
+    composes: heading-type from '../../styles/typography.css';
+    padding: 1rem 1rem 0;
+    height: var(--header-height);
+}
+
+.rail-track {
+    white-space: nowrap;
+    padding: 1rem;
+    transition: transform 200ms ease-in-out;
+}
+
+.rail-track > * {
+    margin-right: 1rem;
+}
+
+.rail-button {
+    position: absolute;
+    height: var(--button-size);
+    width: var(--button-size);
+    background: var(--color-dazn-medium-grey);
+    top: calc(50% - (var(--button-size) / 2) + (var(--header-height) / 2));
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 250ms, background-color 150ms, color 150ms;
+    color: white;
+}
+
+.rail-button:hover {
+    background: var(--color-dazn-yellow);
+    color: black;
+}
+
+.rail:hover [class*='rail-button'] {
+    opacity: 1;
+}
+
+.rail-button::before {
+    content: '';
+    position: absolute;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    border: var(--arrow-stroke-width) solid currentColor;
+    border-top: 0;
+    border-left: 0;
+    top: calc(50% - (var(--arrow-size) / 2));
+    left: calc(50% - (var(--arrow-size) / 2));
+}
+
+.rail-button-left {
+    composes: rail-button;
+    left: 0;
+}
+
+.rail-button-left:before {
+    transform: translateX(0.25rem) rotate(135deg);
+}
+
+.rail.rail-at-left-edge .rail-button-left {
+    opacity: 0;
+}
+
+.rail-button-right {
+    composes: rail-button;
+    right: 0;
+}
+
+.rail-button-right:before {
+    transform: translateX(-0.25rem) rotate(-45deg);
+}
+
+.rail.rail-at-right-edge .rail-button-right {
+    opacity: 0;
+}
