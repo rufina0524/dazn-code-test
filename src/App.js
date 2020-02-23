@@ -13,12 +13,8 @@ class App extends React.PureComponent {
         isLoading: true
     };
 
-    handleLinkClick = this.handleLinkClick.bind(this);
-
     async componentDidMount() {
         let railsData;
-
-        window.addEventListener('click', this.handleLinkClick);
 
         try {
             railsData = await railsService.get();
@@ -28,44 +24,8 @@ class App extends React.PureComponent {
 
         this.setState({
             rails: railsData,
-            isLoading: false
-        });
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('click', this.handleLinkClick);
-    }
-
-    handleLinkClick(e) {
-        const { target } = e;
-        const link = target.matches('a') ? target : target.closest('a');
-
-        if (!link) return;
-
-        e.preventDefault();
-
-        const { href } = link;
-        const segments = new URL(href).pathname.substring(1).split('/');
-        const activeId = segments[1];
-
-        this.setActiveTile(activeId);
-    }
-
-    setActiveTile(activeId) {
-        const nextRails = this.state.rails.map(rail => {
-            const nextRail = Object.assign({}, rail);
-
-            nextRail.tiles = nextRail.tiles.map(tile =>
-                Object.assign({}, tile, {
-                    isActive: tile.id === activeId
-                })
-            );
-
-            return nextRail;
-        });
-
-        this.setState({
-            rails: nextRails
+            isLoading: false,
+            activeRailId: ''
         });
     }
 
@@ -75,7 +35,16 @@ class App extends React.PureComponent {
                 <Header />
                 <main className={styles.appMain}>
                     {this.state.rails.map(rail => (
-                        <Rail {...rail} key={rail.id} />
+                        <Rail
+                            {...rail}
+                            key={rail.id}
+                            isActive={this.state.activeRailId === rail.id}
+                            onClick={() => {
+                                this.setState({
+                                    activeRailId: rail.id
+                                });
+                            }}
+                        />
                     ))}
                 </main>
                 <Footer />

@@ -6,6 +6,7 @@ const createNextRailState = createStateFactory(() => ({
     tileWidths: [],
     viewportWidth: -1,
     trackPadding: -1,
+    activeTileId: '',
 
     get isAtLeftEdge() {
         return this.index === 0;

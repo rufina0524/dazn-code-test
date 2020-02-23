@@ -97,6 +97,28 @@ class Rail extends React.Component {
         this.movedListeners.forEach(listener => listener());
     }
 
+    handleLinkClick = e => {
+        const { target } = e;
+        const { onClick = () => {} } = this.props;
+        const link = target.matches('a') ? target : target.closest('a');
+
+        if (!link) return;
+
+        if (onClick) {
+            onClick();
+        }
+
+        e.preventDefault();
+
+        const { href } = link;
+        const segments = new URL(href).pathname.substring(1).split('/');
+        const activeTileId = segments[1];
+
+        this.setState({
+            activeTileId
+        });
+    };
+
     render() {
         const railClassName = [
             styles.rail,
@@ -107,7 +129,7 @@ class Rail extends React.Component {
             .join(' ');
 
         return (
-            <div className={railClassName}>
+            <div className={railClassName} onClick={this.handleLinkClick}>
                 <h2 className={styles.railHeading}>{this.props.title}</h2>
                 <div
                     className={styles.railTrack}
@@ -119,6 +141,10 @@ class Rail extends React.Component {
                         <Tile
                             ref={this.setTileReference}
                             {...tile}
+                            isActive={
+                                this.state.activeTileId === tile.id &&
+                                this.props.isActive
+                            }
                             railId={this.props.id}
                             key={tile.id}
                             setMovedListener={this.setMovedListener}
