@@ -10,7 +10,6 @@ describe('<App />', function() {
     const self = this;
 
     before(() => {
-        self.addEventHandlerSpy = spy(window, 'addEventListener');
         self.fetchStub = stub(window, 'fetch').resolves({
             ok: true,
             json: () => Promise.resolve([])
@@ -18,23 +17,11 @@ describe('<App />', function() {
     });
 
     after(() => {
-        self.addEventHandlerSpy.restore();
         self.fetchStub.restore();
     });
 
-    it('attaches a click handler to the `window` when mounted', () => {
-        const wrapper = mount(<App />);
-
-        assert.isTrue(
-            self.addEventHandlerSpy.calledWith(
-                'click',
-                wrapper.instance().handleLinkClick
-            )
-        );
-    });
-
     it('requests rails data when mounted', () => {
-        const wrapper = mount(<App />);
+        mount(<App />);
 
         assert.isTrue(self.fetchStub.calledWith(RAILS_PATH));
     });
