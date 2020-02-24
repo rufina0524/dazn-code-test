@@ -7,7 +7,8 @@
     "start": "node ./server/server.js",
     "prettier-watch": "onchange '**/*.js' '**/*.css' -- prettier --config ./config/prettier/.prettierrc --write {{changed}}",
     "dev": "npm-run-all --parallel prettier-watch start",
-    "test": "mocha --opts ./config/mocha/mocha.opts"
+    "test": "mocha --opts ./config/mocha/mocha.opts",
+    "test:coverage": "nyc npm run test"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -32,6 +33,7 @@
     "morgan": "^1.9.1",
     "node-fetch": "^2.2.0",
     "npm-run-all": "^4.1.3",
+    "nyc": "^15.0.0",
     "onchange": "^5.0.2",
     "postcss-css-variables": "^0.11.0",
     "postcss-import": "^12.0.0",
